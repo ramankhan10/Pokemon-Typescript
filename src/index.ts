@@ -1,0 +1,12 @@
+import { Pokemon } from "./pokemon";
+
+
+
+
+
+
+
+
+
+
+
