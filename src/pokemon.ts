@@ -5,7 +5,7 @@ export class Pokemon {
   private type!: PokemonType;
   private hp!: number;
   private maxHp!: number;
-  private attackPower!: number;
+  public attackPower!: number;
 
   constructor(
     name: string,
@@ -26,7 +26,7 @@ export class Pokemon {
     target.takeDamage(this.attackPower);
   }
 
-  //method khesarat
+  //The method of disadvantages
   public takeDamage(damage: number): void {
     this.hp -= damage;
     if (this.hp < 0) {
@@ -35,7 +35,7 @@ export class Pokemon {
     console.log(`${this.name} ${damage} was injured and Now ${this.hp}`);
   }
 
-  //method Getter baraye dastarsi be etlaat khososi
+  //method Getter To access information
 
   public getName(): string {
     return this.name;
